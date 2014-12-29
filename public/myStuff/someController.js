@@ -3,14 +3,19 @@
  */
 
 angular.module('app')
-.controller('someController', ['httpClient', '$scope', function(httpClient, $scope){
+.controller('someController', ['$http', '$scope', function($http, $scope){
 
-        $scope.happy = 'happiness man';
+        $scope.property = 'happiness man';
 
-        $scope.tester = function()
+        $scope.httpCall = function()
         {
-            data = httpClient.someTest();
-            console.log(data);
+            $http({
+                method: 'GET',
+                url: 'http://httptesting.local:8000/api/first'
+            }).success(function(data)
+            {
+               $scope.property = data.message;
+            })
         }
 
     }]);

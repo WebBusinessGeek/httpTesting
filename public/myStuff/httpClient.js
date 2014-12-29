@@ -21,10 +21,10 @@ angular.module('app')
         {
             return $http({
                 method: 'GET',
-                url: 'http://httptesting.local:8000/api/first',
+                url: 'http://httptesting.local:8000/api/first'
                 //responseType: 'json'
             }).success(function(data){
-
+                return data;
             });
 
         }

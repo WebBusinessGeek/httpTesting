@@ -6,7 +6,7 @@
  * Time: 1:48 PM
  */
 
-namespace myStuff\object;
+namespace App\Mystuff;
 
 
 class object {

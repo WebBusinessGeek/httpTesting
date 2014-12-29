@@ -6,7 +6,7 @@ var app = angular.module('app', ['ngRoute']);
 
 app.config(['$routeProvider' ,function($routeProvider){
     $routeProvider
-        .when('/somepage/',
+        .when('/somepagehere/',
         {
             templateUrl: 'mystuff/someTemplate.html',
             controller: 'someController'

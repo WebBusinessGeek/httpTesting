@@ -1,4 +1,6 @@
 <?php
+use App\Mystuff\object;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -19,6 +21,7 @@ Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
 ]);
+
 
 
 Route::get('/api/first', function(){

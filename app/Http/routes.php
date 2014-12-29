@@ -19,3 +19,12 @@ Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
 ]);
+
+
+Route::get('/api/first', function(){
+
+	return json_encode([
+		'message' => 'success',
+		'code' => '200'
+		]);
+});
